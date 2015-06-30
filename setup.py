@@ -10,8 +10,6 @@ def read(*rnames):
     with open(os.path.join(os.path.dirname(__file__), *rnames), 'rb') as text:
         return text.read().decode('utf-8')
 
-version = '1.0-alpha1'
-
 description = "Buildout recipe to manage jobs on a remote Jenkins CI server."
 
 long_description = (
@@ -45,7 +43,7 @@ tests_require = [
 ]
 
 setup(name='collective.recipe.jenkinsjob',
-      version=version,
+      version='1.0a2.dev0',
       description=description,
       long_description=long_description,
       # Get more strings from
